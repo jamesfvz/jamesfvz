@@ -1,0 +1,107 @@
+$color:rgb(225, 241, 77);
+$margin: 20px;
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    color: $color;
+    margin-bottom: .3em;
+
+    
+  }
+
+h4{
+  text-align: left;
+  font-size: 1em;
+  color: #009;
+  margin-bottom: .3em;
+  margin:$margin;
+  
+}
+h5{
+  text-align: left;
+  font-size: 1em;
+  color: rgb(153, 231, 26);
+  margin-bottom: .3em;
+  text-decoration: underline;
+  margin:$margin;
+}
+
+table {
+  margin:$margin;
+  width: 290px;
+}
+
+th {
+  padding: .2em;
+}
+
+td {
+  padding-left: .5em;
+  padding-right: .5em;
+  border: 1px solid #900;
+  background-color: #ffc;
+}
+
+#trHeader {
+  text-decoration: underline;
+  color: #900;
+}
+#margin {
+  margin: $margin ;
+}
+.centerCell {
+  text-align: center;
+}
+
+.centerImage{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+
+@media (min-width: 800px) {
+  body {
+      background-color: rgb(221, 201, 137);
+      font-size: 3em
+  }
+  }
+  @media (max-width: 799px) {
+  body {
+      background-color: rgb(199, 237, 247);
+      font-size: 1em
+  }
+  }
+
+  div{
+    margin:$margin;
+    
+    ul{
+      font-size:50px;
+      list-style-type:circle;
+    }
+    p{
+      font-size: 50px;
+    }
+  }
+
+  %message {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: .3em;
+}
+
+.specificMessage {
+    @extend %message;
+    background-color: rgb(117, 190, 48);
+    font-size: 75px;
+}
+
+h3{
+  @extend %message;
+  text-align: left;
+  font-size: 1em;
+  color: rgb(231, 108, 26);
+  margin:$margin;
+}
